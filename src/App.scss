@@ -8,7 +8,7 @@
     --LightGrayishBlue: hsl(220, 16%, 96%);
     --White:  hsl(0, 0%, 100%);
     --ff: 'Public Sans', sans-serif;
-    --fs: 1.8rem;
+    --fs: clamp(1.6rem, 1.5vw, 1.8rem);
 }
 
 
@@ -20,6 +20,7 @@
     font-size: var(--fs);
     font-family: var(--ff);
     line-height: 1.5;
+    overflow: hidden;
 }
 
 .container {
@@ -31,7 +32,25 @@
     }
 }
 
+.active {
+    color: var(--LimeGreen);
+}
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+}
+h2 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 400;
+}
+h3 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: 400;
+}
+
 h1, h2, h3 {
     color: var(--DarkBlue);
     line-height: 1.2;
+    text-wrap: balance;
 }

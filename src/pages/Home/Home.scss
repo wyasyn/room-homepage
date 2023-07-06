@@ -1,0 +1,7 @@
+.home {
+    section {
+        &:nth-child(odd){
+            background: var(--White);
+        }
+    }
+}
