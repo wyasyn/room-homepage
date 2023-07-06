@@ -1,0 +1,96 @@
+.navbar {
+    background: var(--White);
+    .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo {
+            width: 100px;
+        }
+        .menu_icon {
+            cursor: pointer;
+            display: none;
+            z-index: 999;
+            @media screen and (max-width:900px) {
+                display: block;
+            }
+        } 
+        .backdrop {
+            z-index: 7;
+            position: fixed;
+            top: 55px;
+            left: 0;
+            width: 100%;
+            min-height: 100vh;
+            background: rgba(0, 0, 0, .3);
+            backdrop-filter: blur(1.5px);
+            -webkit-backdrop-filter: blur(1.5px);
+            display: none;
+            &.move {
+                display: block;
+            }
+        }
+        .nav-menu {
+            display: grid;
+            .menu_bar {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 3rem;
+                .navItem {
+                    padding: 1em 0;
+                    position: relative;
+                    -webkit-transition: all .3s ease-in;
+                    -moz-transition: all .3s ease-in;
+                    -ms-transition: all .3s ease-in;
+                    -o-transition: all .3s ease-in;
+                    transition: all .3s ease-in;
+                    @media screen and (max-width:900px){
+                        padding: .5em 0;
+                    }
+                    &::before {
+                        content: '';
+                        background: transparent;
+                        width: 100%;
+                        height: 3px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+                    &:hover {
+                        &::before {
+                            background: var(--gradient);
+                        }
+                    }
+                }
+                @media screen and (max-width:900px) {
+                    flex-direction: column;
+                    background: var(--White);
+                    color: var(--DarkBlue);
+                    gap: 1rem;
+                    padding: 1em;
+                    -webkit-border-radius: 1em;
+                    -moz-border-radius: 1em;
+                    -ms-border-radius: 1em;
+                    -o-border-radius: 1em;
+                    border-radius: 1em;
+                }
+            }
+            @media screen and (max-width:900px) {
+                z-index: 10;
+                position: fixed;
+                top: 80px;
+                left: -50%;
+                -webkit-transform: translateX(-50%);
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+                transform: translateX(-50%);
+                width: 90%;
+                &.move {
+                    left: 50%;
+                }
+            }
+        }
+    }
+}
