@@ -8,7 +8,7 @@
     --LightGrayishBlue: hsl(220, 16%, 96%);
     --White:  hsl(0, 0%, 100%);
     --ff: 'Public Sans', sans-serif;
-    --fs: clamp(1.6rem, 1.5vw, 1.8rem);
+    --fs: clamp(1.4rem, 1.2vw, 1.6rem);
 }
 
 
@@ -41,11 +41,11 @@ h1 {
     font-weight: 700;
 }
 h2 {
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4vw, 3.5rem);
     font-weight: 400;
 }
 h3 {
-    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
     font-weight: 400;
 }
 

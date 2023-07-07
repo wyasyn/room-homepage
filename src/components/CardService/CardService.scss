@@ -1,0 +1,12 @@
+.card-service {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3em 0;
+    img {
+        width: 50px;
+    }
+     @media screen and (max-width:900px) {
+        align-items: center;
+    }
+}
