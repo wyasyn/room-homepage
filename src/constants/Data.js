@@ -1,50 +1,33 @@
-export const Data = [
-    {
-        img: "assets/icon-online.svg",
-        title: "Online Banking",
-        description: " Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.",
-    },
-    {
-        img: "assets/icon-budgeting.svg",
-        title: "Simple Budgeting",
-        description: "See exactly where your money goes each month. Receive notifications when you’re close to hitting your limits.",
-    },
-    {
-        img: "assets/icon-onboarding.svg",
-        title: "Fast Onboarding",
-        description: "We don’t do branches. Open your account in minutes online and start taking control of your finances right away.",
-    },
-    {
-        img: "assets/icon-api.svg",
-        title: "Open API",
-        description: "Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.",
-    },
-]
+import {images} from "../constants";
 
+export const NavData = ["home", "shop", "about", "contact"] 
 
-export const ArticlesData = [
-    {
-        img: "assets/image-currency.jpg",
-        name: "Claire Robinson",
-        subtitle: "Receive money in any currency with no fees",
-        description: "  The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …"
-    },
-    {
-        img: "assets/image-plane.jpg",
-        name: "Wilson Hutton",
-        subtitle: "Take your Easybank card wherever you go ",
-        description: "We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …"
-    },
-    {
-        img: "assets/image-restaurant.jpg",
-        name: "Wilson Hutton",
-        subtitle: "Treat yourself without worrying about money ",
-        description: "Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …"
-    },
-    {
-        img: "assets/image-confetti.jpg",
-        name: "Claire Robinson",
-        subtitle: "Our invite-only Beta accounts are now live! ",
-        description: "After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ..."
-    },
-] 
+export const HomeOne = {
+    title: "Discover innovative ways to decorate",
+    describe: " We provide unmatched quality, comfort, and style for property owners across the country. Our experts combine form and function in bringing your vision to life. Create a room in your own style with our collection and make your property a reflection of you and what you love.",
+    img: images.whiteChairD ,
+    imgM: images.whiteChairM,
+    left: "/about",
+    right: "/shop",
+}
+export const HomeTwo = {
+    title: "We are available all across the globe",
+    describe: "With stores all over the world, it's easy for you to find furniture for your home or place of business. Locally, we’re in most major cities throughout the country. Find the branch nearest you using our store locator. Any questions? Don't hesitate to contact us today.",
+    img: images.yellowChairD,
+    imgM: images.yellowChairM,
+    left: "/",
+    right: "/about",
+}
+export const HomeThree = {
+    title: "Manufactured with the best materials",
+    describe: "Our modern furniture store provide a high level of quality. Our company has invested in advanced technology to ensure that every product is made as perfect and as consistent as possible. With three decades of experience in this industry, we understand what customers want for their home and office.",
+    img: images.blackChairD,
+    imgM: images.blackChairM,
+    left: "/shop",
+    right: "/",
+}
+
+export const AboutInfo = {
+    title: "About our furniture",
+    describe: "Our multifunctional collection blends design and function to suit your individual taste. Make each room unique, or pick a cohesive theme that best express your interests and what inspires you. Find the furniture pieces you need, from traditional to contemporary styles or anything in between. Product specialists are available to help you create your dream space.",
+}

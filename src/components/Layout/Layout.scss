@@ -1,0 +1,26 @@
+.layout {
+    display: grid;
+    height: auto;
+    .about {
+        display: grid;
+        grid-template-columns: auto 500px auto;
+        .about-info {
+            padding: 3em;
+            h3 {
+                text-transform: uppercase;
+                margin-bottom: .5em;
+                font-size: clamp(1.3rem, 1.5vw, 3rem);
+                letter-spacing: 8px;
+            }
+            p {
+                font-size: clamp(1.1rem,1vw, 2rem);
+            }
+        }
+        @media screen and (max-width:900px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    @media screen and (max-width:900px){
+        height: auto;
+    }
+}

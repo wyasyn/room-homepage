@@ -1,27 +1,32 @@
 import React from 'react'
+import { images } from '../../constants'
+import { Link } from 'react-router-dom'
 import './Hero.scss'
-import Button from "../../components/Button/Button"
 
-function Hero() {
+function Hero({img, title, describe, left, right}) {
   return (
     <section className="hero">
-        <div className="hero-container container">
-            <div className="col-1">
-                    <h1 className="hero-title">
-                        Next generation digital banking
-                    </h1>
-                    <p>
-                        Take your financial life online. Your Easybank account will be a one-stop-shop for spending, saving, budgeting, investing, and much more.
-                    </p>
-                    <Button
-                    text="Request Invite"
-                     />
-                </div>
-                <div className="col-2">
-                    <img className='desktop' src='assets/bg-intro-desktop.svg' alt='intro bg' />
-                    <img className='phones' src='assets/image-mockups.png' alt='phones' />
-                </div>
+        <div className="image">
+            <img src={img} alt="hero pic" />
+        </div>
+        <div className="hero-info">
+            <div className="nav">
+                <Link to={left} >
+                <img src={images.left} alt="arrow" />
+                </Link>
+                <Link to={right} >
+                <img src={images.right} alt="arrow" />
+                </Link>
             </div>
+            <h1>{title}</h1>
+            <p>
+                {describe}
+            </p>
+            <div className="cta">
+                <small>SHOP NOW</small>
+                <img src={images.arrow} alt="cta" />
+            </div>
+        </div>
     </section>
   )
 }

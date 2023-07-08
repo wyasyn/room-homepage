@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import Button from '../Button/Button';
 import {  Link, NavLink } from "react-router-dom"
 import './navbar.scss'
+import { images } from '../../constants';
+import { NavData } from '../../constants/Data';
 
 function Navbar() {
 
@@ -12,45 +13,26 @@ function Navbar() {
 
   return (
     <>
-    <div className="navbar">
+    <div className={click ? "navbar move" : "navbar"}>
       <div className="navbar-container container">
 
-        <Link to="/" className="logo" onClick={closeMobileMenu}>
-            <img src='assets/logo.svg' alt='logo' />
-        </Link>
-
-        <div className='menu_icon' onClick={handleClick}>
-          {click ? <img src="assets/icon-close.svg" alt='close icon' /> : <img src='assets/icon-hamburger.svg' alt='open icon' />}
+      <div className='menu_icon' onClick={handleClick}>
+          {click ? <img src={images.close} alt='close icon' /> : <img src={images.menu} alt='open icon' />}
         </div>
+
+        <Link to="/" className="logo" onClick={closeMobileMenu}>
+            <img src={images.logo} alt='logo' />
+        </Link>
         
         <div className={click ? "backdrop move" : "backdrop"}></div>
 
-      <div className={click ? "nav-menu move" : "nav-menu"}>
-      <ul className="menu_bar">
-      <li className='navItem' onClick={closeMobileMenu}>
-        <NavLink to="/" className='nav-links'>Home</NavLink>
-      </li>
-      <li className='navItem' onClick={closeMobileMenu}>
-        <NavLink to="/about" className='nav-links'>About</NavLink>
-      </li>
-      <li className='navItem' onClick={closeMobileMenu}>
-        <NavLink to="/contact" className='nav-links'>Contact</NavLink>
-      </li>
-      <li className='navItem' onClick={closeMobileMenu}>
-        <NavLink to="/blog" className='nav-links'>Blog</NavLink>
-      </li>
-      <li className='navItem' onClick={closeMobileMenu}>
-        <NavLink to="/careers" className='nav-links'>Careers</NavLink>
-      </li>
-    </ul>
-    </div>
-
-    <Button
-      text="Request Invite"
-     />
-
-
-
+      <ul className={click ? "nav-menu move" : "nav-menu"}>
+          {NavData.map((data, index) => (
+            <li key={index}> 
+                <NavLink to="/" >{data} </NavLink>
+            </li>
+          ))}
+      </ul>
       </div>
     </div>
     </>

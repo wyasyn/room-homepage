@@ -1,56 +1,25 @@
 :root {
-    --DarkBlue: hsl(233, 26%, 24%);
-    --LimeGreen:  hsl(136, 65%, 51%);
-    --BrightCyan:  hsl(192, 70%, 51%);
-    --gradient: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan) );
-
-    --GrayishBlue: hsl(233, 8%, 62%);
-    --LightGrayishBlue: hsl(220, 16%, 96%);
-    --White:  hsl(0, 0%, 100%);
-    --ff: 'Public Sans', sans-serif;
-    --fs: clamp(1.4rem, 1.2vw, 1.6rem);
+    --DarkGray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --VeryDarkGray: hsl(0, 0%, 27%);
 }
+
 
 
 .App {
-    background: var(--LightGrayishBlue);
-    color: var(--GrayishBlue);
-    min-height: 100vh;
-    width: 100%;
-    font-size: var(--fs);
-    font-family: var(--ff);
+    font-family: 'League Spartan', sans-serif;
+    font-size: clamp(1.1rem,1vw, 2rem);
     line-height: 1.5;
-    overflow: hidden;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
-    @media screen and (max-width:900px) {
-        width: 100%;
-        padding: 1em;
-    }
-}
-
-.active {
-    color: var(--LimeGreen);
+    font-weight: 500;
+    color: var(--DarkGray);
+    background: var(--White);
+    min-height: 100vh;
 }
 
 h1 {
-    font-size: clamp(2.5rem, 6vw, 5rem);
     font-weight: 700;
 }
-h2 {
-    font-size: clamp(2rem, 4vw, 3.5rem);
-    font-weight: 400;
-}
-h3 {
-    font-size: clamp(1.8rem, 3vw, 2rem);
-    font-weight: 400;
-}
-
 h1, h2, h3 {
-    color: var(--DarkBlue);
-    line-height: 1.2;
-    text-wrap: balance;
+    color: var(--Black);
 }
