@@ -1,0 +1,20 @@
+footer {
+    background: #121212;
+    color: var(--White);
+    padding: 5em 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    .logo {
+        width: 7rem;
+    }
+    .links {
+        display: flex;
+        gap: 2rem;
+    }
+    .link {
+        color: rgb(223, 110, 110);
+    }
+}

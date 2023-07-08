@@ -15,6 +15,9 @@
             padding: 1em 1.5em;
             align-items: center;
             justify-content: center;
+            @media screen and (max-width:982px){
+                bottom: 0;
+            }
             @media screen and (max-width:950px) {
                 right: 0;
                 left: auto;
@@ -30,6 +33,9 @@
         }
         p {
             margin-bottom: 2em;
+            @media screen and (max-width:982px){
+                margin-bottom: 1em;
+            }
         }
         .cta {
             display: flex;
@@ -40,13 +46,28 @@
                 color: var(--Black);
                 font-size: 2rem;
                 letter-spacing: 8px;
+                @media screen and (max-width:975px){
+                   font-size: 1rem;
+                }
+                @media screen and (max-width:900px){
+                   font-size: 2rem;
+                }
             }
             img {
                 width: 32px;
                 object-fit: contain;
                 object-position: right center;
+                @media screen and (max-width:975px){
+                    width: 20px;
+                }
+                @media screen and (max-width:900px){
+                    width: 32px;
+                }
             }
         }
+    }
+    @media screen and (max-width:1000px){
+        grid-template-columns: 2fr 1fr;
     }
     @media screen and (max-width:950px) {
         grid-template-columns: 1fr;

@@ -16,7 +16,7 @@ import close from '../assets/icon-close.svg';
 
 
 
-export default {
+export const Images = {
     logo,
     whiteChairD,
     yellowChairD,

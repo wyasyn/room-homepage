@@ -16,14 +16,18 @@ function Layout() {
             </Routes>
         </section>
         <section className="about">
-            <img src={images.aboutDark} alt="about" />
+            <div className="photo">
+                <img src={images.aboutDark} alt="about" />
+            </div>
            <div className="about-info">
-            <h3>{AboutInfo.title}</h3>
-            <p>
-                {AboutInfo.describe}
-            </p>
+                <h3>{AboutInfo.title}</h3>
+                <p>
+                    {AboutInfo.describe}
+                </p>
            </div>
-            <img src={images.aboutLight} alt="about" />
+           <div className="photo">
+                <img src={images.aboutLight} alt="about" />
+           </div>
         </section>
     </main>
   )

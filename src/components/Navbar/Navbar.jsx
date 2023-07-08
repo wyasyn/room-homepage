@@ -13,6 +13,7 @@ function Navbar() {
 
   return (
     <>
+    <div className={click ? "backdrop move" : "backdrop"}></div>
     <div className={click ? "navbar move" : "navbar"}>
       <div className="navbar-container container">
 
@@ -23,12 +24,10 @@ function Navbar() {
         <Link to="/" className="logo" onClick={closeMobileMenu}>
             <img src={images.logo} alt='logo' />
         </Link>
-        
-        <div className={click ? "backdrop move" : "backdrop"}></div>
 
       <ul className={click ? "nav-menu move" : "nav-menu"}>
           {NavData.map((data, index) => (
-            <li key={index}> 
+            <li key={index} onClick={closeMobileMenu} > 
                 <NavLink to="/" >{data} </NavLink>
             </li>
           ))}

@@ -1,12 +1,13 @@
 
 import './App.scss';
-import { Layout, Navbar } from './components';
+import { Footer, Layout, Navbar } from './components';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Layout />
+      <Footer />
     </div>
   );
 }
