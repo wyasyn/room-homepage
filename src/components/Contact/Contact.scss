@@ -1,0 +1,16 @@
+.contact {
+    min-height: 70vh;
+    background: gray;
+    padding: 5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/desktop-image-hero-3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    h1 {
+        color: whitesmoke;
+        font-size: clamp(2.5rem, 2.2vw, 5rem);
+    }
+}

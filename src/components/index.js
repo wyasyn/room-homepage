@@ -5,3 +5,4 @@ export {default as About} from './About/About';
 export {default as Shop} from './Shop/Shop';
 export {default as Hero} from './Hero/Hero';
 export {default as Footer} from './Footer/Footer';
+export {default as Contact} from './Contact/Contact';

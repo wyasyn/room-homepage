@@ -3,7 +3,7 @@ import './Layout.scss';
 import { images } from "../../constants";
 import { AboutInfo } from '../../constants/Data';
 import { Route, Routes } from 'react-router-dom';
-import {About, Home, Shop} from "../../components";
+import {About, Contact, Home, Shop} from "../../components";
 
 function Layout() {
   return (
@@ -13,6 +13,7 @@ function Layout() {
                 <Route path='/' element={<Home /> } />
                 <Route path='/shop' element={<Shop /> } />
                 <Route path='/about' element={<About /> } />
+                <Route path='/contact' element={<Contact /> } />
             </Routes>
         </section>
         <section className="about">

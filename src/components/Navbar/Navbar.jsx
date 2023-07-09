@@ -28,7 +28,7 @@ function Navbar() {
       <ul className={click ? "nav-menu move" : "nav-menu"}>
           {NavData.map((data, index) => (
             <li key={index} onClick={closeMobileMenu} > 
-                <NavLink to="/" >{data} </NavLink>
+                <NavLink to={data.link} >{data.name} </NavLink>
             </li>
           ))}
       </ul>

@@ -1,6 +1,23 @@
 import {images} from "../constants";
 
-export const NavData = ["home", "shop", "about", "contact"] 
+export const NavData = [
+    {
+        name: "home",
+        link: "/"
+    },
+    {
+        name: "shop",
+        link: "/shop"
+    },
+    {
+         name: "about",
+        link: "/about"
+    },
+    {
+        name: "contact",
+        link: "/contact"
+    }
+] 
 
 export const HomeOne = {
     title: "Discover innovative ways to decorate",
