@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer>
         <div class="attribution">
-            Challenge by <Link className='link' to="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</Link> Coded by <Link className='link' to="https://walmyas.netlify.app" >Yasin Walum</Link>.
+            Challenge by <Link className='link' to="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</Link> Coded by <Link className='link' to="https://ywalum.com" >Yasin Walum</Link>.
         </div>
         <div className="copyright">
             {currentYear} &copy; Copyright: All rights Reserved.
